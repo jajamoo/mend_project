@@ -35,8 +35,8 @@ Class Senator{
                 $address_array = [];
                 $address_array[] = [
                     'street' => $street,
-                    'city' => $exploded_address_array[5],
-                    'state' => $exploded_address_array[6],
+                    'city'   => $exploded_address_array[5],
+                    'state'  => $exploded_address_array[6],
                     'postal' => $exploded_address_array[7]
                 ];
                 $new_member_array[] = [
