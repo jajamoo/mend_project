@@ -3,8 +3,8 @@
 require 'vendor/autoload.php';
 use GuzzleHttp\Client as Client;
 
-Class Senator{
-
+Class Senator
+{
     private $client;
 
     /**
@@ -25,7 +25,7 @@ Class Senator{
         } catch (\GuzzleHttp\Exception\GuzzleException $e) {
             echo $e->getMessage();
         }
-        
+
         $xml_string = simplexml_load_string((string) $response->getBody());
         $member_array = [];
 
