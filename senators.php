@@ -31,7 +31,7 @@ Class Senator{
 
             foreach ($member_array as $new_member){
                 $exploded_address_array = explode(' ',  $new_member['address']);
-                $street = $exploded_address_array[0]. " " .$exploded_address_array[1]. " " . $exploded_address_array[2]. " " . $exploded_address_array[3]. " " . $exploded_address_array[4]. " " ;
+                $street = $exploded_address_array[0]. " " .$exploded_address_array[1]. " " . $exploded_address_array[2]. " " . $exploded_address_array[3]. " " . $exploded_address_array[4];
                 $address_array = [];
                 $address_array[] = [
                     'street' => $street,
